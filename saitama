@@ -180,7 +180,6 @@ flinger(char.HumanoidRootPart)
 m=plr:GetMouse()
 
 char.HumanoidRootPart.Transparency = 0
-char.HumanoidRootPart.Color3 = Color3.fromRGB(30,255,30)
 
 bp=Instance.new('BodyPosition',char.HumanoidRootPart)
 bp.P = 9e9
@@ -202,7 +201,7 @@ end))
 local Highlight = Instance.new("SelectionBox")
 Highlight.Adornee = char.HumanoidRootPart
 Highlight.LineThickness=0.05
-Highlight.Color3 = Color3.fromRGB(30,255,30)
+Highlight.Color3 = Color3.fromRGB(255, 0, 0)
 Highlight.Parent = char.HumanoidRootPart
 Highlight.Name = "RAINBOW"
 
