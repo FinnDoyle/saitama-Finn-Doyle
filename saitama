@@ -42,18 +42,18 @@ end
 
 --flinge = false
 
-urmom=5.65
+urmom=5
 plr.Character=nil
 plr.Character=char
 char.Humanoid.AutoRotate=false
 char.Humanoid.WalkSpeed=0
 char.Humanoid.JumpPower=0
 char.Torso.Anchored = true
-notify('Saitama','Preparing...\nPlease wait '..urmom..' seconds.')
+notify('SAITAMA','Preparing...\nWait '..urmom..' seconds.')
 wait(urmom)
 char.Torso.Anchored=false
-notify('Saitama','Ready')
-char.Humanoid.Health=0
+notify('Saitama','DONE')
+char.Humanoid.Health=100
 --reanim.Humanoid.AutoRotate=false
 reanim.Animate.Disabled = true
 reanim.Parent = fl
@@ -200,7 +200,7 @@ end))
 
 local Highlight = Instance.new("SelectionBox")
 Highlight.Adornee = char.HumanoidRootPart
-Highlight.LineThickness=0.05
+Highlight.LineThickness=0
 Highlight.Color3 = Color3.fromRGB(255, 0, 0)
 Highlight.Parent = char.HumanoidRootPart
 Highlight.Name = "RAINBOW"
