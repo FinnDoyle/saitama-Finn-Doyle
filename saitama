@@ -36,7 +36,7 @@ reanim.Name='NexoPD'
 
 for i,v in next, reanim:GetDescendants() do
 	if v:IsA('BasePart') or v:IsA('Decal') then
-		v.Transparency = 1 
+		v.Transparency = 0
 	end 
 end
 
@@ -152,7 +152,7 @@ create(char['Left Leg'],reanim['Left Leg'])
 
 m = plr:GetMouse()
 
-local LVecPart = Instance.new("Part", fl) LVecPart.CanCollide = false LVecPart.Transparency = 1
+local LVecPart = Instance.new("Part", fl) LVecPart.CanCollide = false LVecPart.Transparency = 0
 
 te(ct,srv.RenderStepped:Connect(function()
 	local lookVec = workspace.CurrentCamera.CFrame.lookVector
@@ -214,27 +214,27 @@ spawn(function()
 		hrp.Color3 = Color3.new(255/255,0/255,0/255)
 		for i = 0,255,10 do
 			wait()
-			hrp.Color3 = Color3.new(255/255,0/255,0/255)
+			hrp.Color3 = Color3.new(255/255,i/255,0/255)
 		end
 		for i = 255,0,-10 do
 			wait()
-			hrp.Color3 = Color3.new(255/255,0/255,0/255)
+			hrp.Color3 = Color3.new(i/255,255/255,0/255)
 		end
 		for i = 0,255,10 do
 			wait()
-			hrp.Color3 = Color3.new(255/255,0/255,0/255)
+			hrp.Color3 = Color3.new(0/255,255/255,i/255)
 		end
 		for i = 255,0,-10 do
 			wait()
-			hrp.Color3 = Color3.new(255/255,0/255,0/255)
+			hrp.Color3 = Color3.new(0/255,i/255,255/255)
 		end
 		for i = 0,255,10 do
 			wait()
-			hrp.Color3 = Color3.new(255/255,0/255,0/255)
+			hrp.Color3 = Color3.new(i/255,0/255,255/255)
 		end
 		for i = 255,0,-10 do
 			wait()
-			hrp.Color3 = Color3.new(255/255,0/255,0/255)
+			hrp.Color3 = Color3.new(255/255,0/255,i/255)
 		end
 	end
 end)
