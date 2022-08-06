@@ -180,6 +180,7 @@ flinger(char.HumanoidRootPart)
 m=plr:GetMouse()
 
 char.HumanoidRootPart.Transparency = 0
+char.HumanoidRootPart.Color3 = Color3.fromRGB(30,255,30)
 
 bp=Instance.new('BodyPosition',char.HumanoidRootPart)
 bp.P = 9e9
