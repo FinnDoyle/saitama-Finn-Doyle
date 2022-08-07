@@ -36,7 +36,7 @@ reanim.Name='NexoPD'
 
 for i,v in next, reanim:GetDescendants() do
 	if v:IsA('BasePart') or v:IsA('Decal') then
-		v.Transparency = 0 
+		v.Transparency = 1 
 	end 
 end
 
@@ -179,7 +179,7 @@ flinger(char.HumanoidRootPart)
 
 m=plr:GetMouse()
 
---char.HumanoidRootPart.Transparency = 0
+char.HumanoidRootPart.Transparency = 0
 
 bp=Instance.new('BodyPosition',char.HumanoidRootPart)
 bp.P = 9e9
@@ -200,8 +200,8 @@ end))
 
 local Highlight = Instance.new("SelectionBox")
 Highlight.Adornee = char.HumanoidRootPart
-Highlight.LineThickness=0.05
-Highlight.Color3 = Color3.fromRGB(30,255,30)
+Highlight.LineThickness=1
+Highlight.Color3 = Color3.new(1, 0, 0.0156863)
 Highlight.Parent = char.HumanoidRootPart
 Highlight.Name = "RAINBOW"
 
