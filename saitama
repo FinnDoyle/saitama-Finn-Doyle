@@ -73,6 +73,7 @@ function create(part, parent, p, r)
 	parent[part.Name].Position = p or Vector3.new()
 	part[part.Name].Orientation = r or Vector3.new()
 	part.AlignPosition.MaxForce = 999999999
+	part.Transparency = 0
 	part.AlignPosition.MaxVelocity = math.huge
 	part.AlignPosition.ReactionForceEnabled = false
 	part.AlignPosition.Responsiveness = math.huge
@@ -94,6 +95,7 @@ function Pos(part, parent, p)
 	--part.AlignOrientation.Attachment1 = parent[part.Name]
 	parent[part.Name].Position = p or Vector3.new()
 	part.AlignPosition.MaxForce = 999999999
+	part.Transparency = 0
 	part.AlignPosition.MaxVelocity = math.huge
 	part.AlignPosition.ReactionForceEnabled = false
 	part.AlignPosition.Responsiveness = math.huge
