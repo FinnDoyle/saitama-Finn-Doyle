@@ -36,7 +36,7 @@ reanim.Name='NexoPD'
 
 for i,v in next, reanim:GetDescendants() do
 	if v:IsA('BasePart') or v:IsA('Decal') then
-		v.Transparency = 1 
+		v.Transparency = 0 
 	end 
 end
 
@@ -152,7 +152,7 @@ create(char['Left Leg'],reanim['Left Leg'])
 
 m = plr:GetMouse()
 
-local LVecPart = Instance.new("Part", fl) LVecPart.CanCollide = false LVecPart.Transparency = 0
+local LVecPart = Instance.new("Part", fl) LVecPart.CanCollide = false LVecPart.Transparency = 1
 
 te(ct,srv.RenderStepped:Connect(function()
 	local lookVec = workspace.CurrentCamera.CFrame.lookVector
