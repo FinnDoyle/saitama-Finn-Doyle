@@ -80,6 +80,7 @@ function create(part, parent, p, r)
 	part.AlignPosition.RigidityEnabled = false
 	part.AlignOrientation.MaxTorque = 999999999
 	part.Massless=true
+	part.Transparency = 1
 end
 
 function Pos(part, parent, p)
@@ -101,6 +102,7 @@ function Pos(part, parent, p)
 	--part.AlignPosition.RigidityEnabled = false
 	--part.AlignOrientation.MaxTorque = 999999999
 	part.Massless=true
+	part.Transparency = 1
 end
 
 for i,part in next, char:GetDescendants() do
@@ -200,8 +202,8 @@ end))
 
 local Highlight = Instance.new("SelectionBox")
 Highlight.Adornee = char.HumanoidRootPart
-Highlight.LineThickness=1
-Highlight.Color3 = Color3.new(1, 0, 0.0156863)
+Highlight.LineThickness=0
+Highlight.Color3 = Color3.new(1, 0, 0)
 Highlight.Parent = char.HumanoidRootPart
 Highlight.Name = "RAINBOW"
 
